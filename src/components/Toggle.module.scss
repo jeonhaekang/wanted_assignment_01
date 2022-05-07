@@ -1,0 +1,37 @@
+@use '/src/styles/constans/colors';
+@use '/src/styles/mixins/flexbox';
+
+.toggle {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  background-color: colors.$GRAYA;
+  border-radius: 20px;
+}
+
+.background {
+  position: absolute;
+  left: 3px;
+  width: calc(50% - 3px);
+  height: calc(100% - 6px);
+  background-color: colors.$GRAYE;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.trans {
+  transform: translateX(100%);
+}
+
+button {
+  z-index: 1;
+  width: 50%;
+  font-size: 15px;
+  font-weight: 600;
+  color: colors.$GRAY6;
+}
+
+.selected {
+  color: colors.$BLACK;
+}
