@@ -1,0 +1,12 @@
+@use '/src/styles/constans/colors';
+@use '/src/styles/mixins/flexbox';
+
+.slider {
+  position: relative;
+}
+
+input[type='range'] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+}
