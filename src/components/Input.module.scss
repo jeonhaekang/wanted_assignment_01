@@ -1,0 +1,37 @@
+@use '/src/styles/constans/colors';
+@use '/src/styles/mixins/flexbox';
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid colors.$GRAY6;
+    border-radius: 10px;
+  }
+}
+
+svg {
+  position: absolute;
+  right: 5px;
+  fill: gray;
+  transition: 0.3s;
+}
+
+.inputBox {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.fillGray {
+  fill: colors.$GRAY6;
+}
+
+.fillOrange {
+  fill: orange;
+}
