@@ -1,0 +1,34 @@
+@use '/src/styles/constans/colors';
+
+.tap {
+  position: relative;
+  display: flex;
+  border-bottom: 2px solid colors.$GRAY6;
+}
+
+button {
+  padding: 10px;
+  color: colors.$GRAY6;
+}
+
+.selectedBar {
+  position: absolute;
+  bottom: 0;
+  width: calc(100% / 3);
+  height: 2px;
+  margin-bottom: -2px;
+  background-color: colors.$ORANGE;
+  transition: 0.3s;
+}
+
+.trans1 {
+  transform: translate(100%);
+}
+
+.trans2 {
+  transform: translate(200%);
+}
+
+.selected {
+  color: colors.$BLACK;
+}
